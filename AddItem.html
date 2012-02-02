@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <!---Corey Hobbs--->
+    <!---Web App Part 1--->
+    <!---1202 Visual Frameworks--->
+    <head>
+        <meta charset="UTF-8" />
+        <meta keywords="My party list" />
+        <meta description="I am creating a list for my pary" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="user-scalable=yes, width=device-width" />
+        <title>Add Item</title>
+    </head>
+    <body>
+        <h1>Add Item</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Party Item</legend>
+                <ul>
+                    <li><label for="date">Date:</label><input type="date" id="date" /></li>
+                    <li><label for="psupply">Party Supply:</label><input type="text" id="psupply" /></li>
+                    <li><label for="hmany">How many:</label><input type="range" id="hmany" /></li>
+                    <li><label for="whowill"> Who is bringing this to the party?:</label><input type="text" id="whowill" /></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Supply Info</legend>
+                <ul>
+                    <li><input type="radio" value="Food" id="food" name="typeof"/><label for="food">Food</label></li>
+                    <li><input type="radio" value="Beverage" id="beverage" name="typeof" /><label for="beverage">Beverage</label></li>
+                    <li><input type="radio" value="Decoration" id="decoration" name="typeof" /><label for="decoration">Decoration</label></li>
+                    <li><input type="radio" value="Other" id="other" name="typeof" /><label for="other">Other</label><input type="text" /></li>
+                </ul>
+                    <li>
+                        <label for="itemstatus">Status of Party Item</label>
+                        <select id="itemstatus">
+                            <optgroup label="Status">
+                                <option value="takencareof">Taken care of</option>
+                                <option value="stillneed">Still need</option>
+                                <option value="someoneelse">Someone else is getting it</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li><label for="notes">Notes about item:</label><textarea id="notes" placeholder="Type Notes Here"></textarea></li>
+            </fieldset>
+            <input type="submit" value="Submit Item" />
+            <a href="#">Clear stored data</a>
+            <a href="#">Display Data</a>
+        </form>
+    </body>
+</html>
